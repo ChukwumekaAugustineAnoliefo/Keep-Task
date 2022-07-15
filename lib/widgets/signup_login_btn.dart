@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:keep_task/config/themes.dart';
 
-class LoginSignUpBtn extends StatelessWidget {
-  LoginSignUpBtn({Key? key, required this.btnText, required this.onPress})
+class ReUsableBtn extends StatelessWidget {
+  ReUsableBtn({Key? key, required this.btnText, required this.onPress})
       : super(key: key);
   final String btnText;
   Function onPress;

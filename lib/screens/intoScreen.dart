@@ -3,6 +3,7 @@ import 'package:keep_task/config/routes.dart';
 import 'package:keep_task/config/themes.dart';
 import 'package:keep_task/widgets/signup_login_btn.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:keep_task/widgets/topright_clip_bg.dart';
 
 class IntroScreen extends StatefulWidget {
   const IntroScreen({Key? key}) : super(key: key);
@@ -17,21 +18,7 @@ class _IntroScreenState extends State<IntroScreen> {
     return Scaffold(
       body: Column(
         children: [
-          SizedBox(
-            height: 200,
-            child: Stack(
-              children: [
-                Positioned(
-                  top: 32,
-                  child: Image.asset('assets/images/topclip.png'),
-                ),
-                Positioned(
-                  top: 32,
-                  child: Image.asset('assets/images/rtopclip.png'),
-                ),
-              ],
-            ),
-          ),
+          TopRightCliper(),
           const SizedBox(
             height: 79,
           ),
@@ -54,7 +41,7 @@ class _IntroScreenState extends State<IntroScreen> {
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus netus elit risus tincidunt non ante.'),
           ),
           const SizedBox(height: 43),
-          LoginSignUpBtn(
+          ReUsableBtn(
             btnText: 'Get Started',
             onPress: () {
               Navigator.of(context).pushNamed(RouteManager.singUpPageScreen);

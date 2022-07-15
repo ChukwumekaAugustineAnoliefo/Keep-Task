@@ -1,7 +1,6 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:keep_task/main.dart';
+import 'package:keep_task/screens/login_page.dart';
 import 'package:keep_task/screens/signup_page.dart';
 
 class RouteManager {
@@ -18,6 +17,10 @@ class RouteManager {
       case singUpPageScreen:
         return MaterialPageRoute(
           builder: (context) => singUpPage(),
+        );
+      case loginPage:
+        return MaterialPageRoute(
+          builder: (context) => loginPagePage(),
         );
       default:
         throw const FormatException('Invalid Page Route');

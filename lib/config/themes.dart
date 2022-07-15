@@ -17,6 +17,7 @@ class TodoThemes {
   static TextTheme textThemes = TextTheme(
       headline1: introHeader,
       headline2: loginBtnChildText,
+      headline5: textFieldHintText,
       headline4: hyperText,
       headline3: subHeaderText);
   static AppBarTheme appBarthem = AppBarTheme(

@@ -13,3 +13,8 @@ TextStyle hyperText = const TextStyle(
     fontSize: 14, fontWeight: FontWeight.w700, color: hyperTextColor);
 TextStyle titleTextStyles = const TextStyle(
     fontSize: 18, fontWeight: FontWeight.w700, color: defaultTextColor);
+TextStyle textFieldHintText = const TextStyle(
+    fontStyle: FontStyle.normal,
+    fontSize: 12,
+    fontWeight: FontWeight.normal,
+    color: defaultTextColor);
