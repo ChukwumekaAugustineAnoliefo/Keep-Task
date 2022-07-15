@@ -17,8 +17,14 @@ class TodoThemes {
   static TextTheme textThemes = TextTheme(
       headline1: introHeader,
       headline2: loginBtnChildText,
+      headline4: hyperText,
       headline3: subHeaderText);
-  static AppBarTheme appBarthem = AppBarTheme();
+  static AppBarTheme appBarthem = AppBarTheme(
+      backgroundColor: appBarBgColor,
+      elevation: 10,
+      foregroundColor: appBarBgColor,
+      titleSpacing: 12,
+      titleTextStyle: titleTextStyles);
 }
 // Container(
 // color: Theme.of(context).accentColor,
