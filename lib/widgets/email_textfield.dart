@@ -4,11 +4,13 @@ import 'package:keep_task/config/themes.dart';
 class EmailTextField extends StatelessWidget {
   const EmailTextField({
     Key? key,
+    required this.secure,
     required this.controller,
     required this.hintTexts,
   }) : super(key: key);
   final TextEditingController controller;
   final String hintTexts;
+  final bool secure;
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +18,7 @@ class EmailTextField extends StatelessWidget {
       width: 325,
       height: 50,
       child: TextField(
+        obscureText: secure,
         style: TodoThemes.textThemes.headline5,
         controller: controller,
         decoration: InputDecoration(
